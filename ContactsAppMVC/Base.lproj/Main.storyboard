@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rFQ-ey-NGv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="mCw-z1-4Yq">
+            <objects>
+                <navigationController id="rFQ-ey-NGv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TNI-aT-hV5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S29-xW-t6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKw-Xb-Ksr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-844" y="133"/>
+        </scene>
+        <!--Contact List Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ContactListScreenViewController" customModule="ContactsAppMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-ms-Aqc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="bBO-J5-pOe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ko8-aO-nMk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gPx-ms-Aqc" secondAttribute="trailing" id="1Mo-fn-dMu"/>
+                            <constraint firstItem="gPx-ms-Aqc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e2c-RH-yK6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gPx-ms-Aqc" secondAttribute="bottom" id="h22-zH-mYq"/>
+                            <constraint firstItem="gPx-ms-Aqc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yoZ-OF-hkQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hl0-Jk-emD"/>
+                    <connections>
+                        <outlet property="tableView" destination="gPx-ms-Aqc" id="pWs-IS-xMM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="133"/>
+        </scene>
+        <!--Contact Edit Screen View Controller-->
+        <scene sceneID="nhR-zX-FD7">
+            <objects>
+                <viewController storyboardIdentifier="ContactEditScreenViewController" id="CLj-RO-8e2" customClass="ContactEditScreenViewController" customModule="ContactsAppMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNH-bQ-ZMI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="igc-PL-cI9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CLj-RO-8e2" id="aL4-dj-eNy"/>
+                                    <outlet property="delegate" destination="CLj-RO-8e2" id="ZYn-XQ-Fhz"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="igc-PL-cI9" firstAttribute="leading" secondItem="0i5-4i-lim" secondAttribute="leading" id="3Me-Ws-QJy"/>
+                            <constraint firstItem="0i5-4i-lim" firstAttribute="trailing" secondItem="igc-PL-cI9" secondAttribute="trailing" id="Jcf-l3-Xi8"/>
+                            <constraint firstItem="0i5-4i-lim" firstAttribute="bottom" secondItem="igc-PL-cI9" secondAttribute="bottom" id="SBg-mB-GMG"/>
+                            <constraint firstItem="igc-PL-cI9" firstAttribute="top" secondItem="0i5-4i-lim" secondAttribute="top" id="hbC-Mw-1Sp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0i5-4i-lim"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="igc-PL-cI9" id="kC7-Wd-YjQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOL-6F-g6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="133"/>
+        </scene>
+    </scenes>
+</document>

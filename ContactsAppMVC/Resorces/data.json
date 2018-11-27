@@ -1,0 +1,113 @@
+
+[
+    {
+        "contactID": "1",
+        "firstName": "Max",
+        "lastName": "Smith",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "2",
+        "firstName": "ARON",
+        "lastName": "Johnson",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "3",
+        "firstName": "ARTHUR",
+        "lastName": "Williams",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "4",
+        "firstName": "BART",
+        "lastName": "Jones",
+        "phoneNumber": "+380763833821",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "5",
+        "firstName": "BEN",
+        "lastName": "Brown",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "6",
+        "firstName": "BERNARDO",
+        "lastName": "Davis",
+        "phoneNumber": "+3122344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "7",
+        "firstName": "BILL",
+        "lastName": "Miller",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "8",
+        "firstName": "Max",
+        "lastName": "Wilson",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "9",
+        "firstName": "CODY",
+        "lastName": " Cook",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    },
+    {
+        "contactID": "10",
+        "firstName": "Evans",
+        "lastName": "Parker",
+        "phoneNumber": "+38012344511",
+        "streetAddress1": "Castro street",
+        "streetAddress2": "Divisadero Street",
+        "city": "London",
+        "state": "DC 20522",
+        "zipCode": "1234"
+    }
+]
